@@ -2,9 +2,17 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { resolve } from 'path'
 
+// Multi-file build for GitHub Pages / Netlify / Vercel.
+// Produces dist/index.html + dist/assets/* with hashed filenames.
+//
+// IMPORTANT: `base` must match the GitHub Pages sub-path exactly.
+// For https://Nnamdi489.github.io/social-engineering-framework/ it is:
+//   '/social-engineering-framework/'
+// If you later deploy to a root domain (custom domain, Vercel),
+// change it to '/' or './'.
 export default defineConfig({
   plugins: [vue()],
-  base: './', // This enables relative paths for static serving
+  base: '/social-engineering-framework/',
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),

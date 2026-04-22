@@ -1,12 +1,13 @@
 {
-  "name": "socio-engineering-research-framework",
+  "name": "social-engineering-framework",
   "version": "1.0.0",
-  "description": "A comprehensive Vue.js application for social engineering attack detection and defense simulation research",
+  "description": "A simulation-based framework for social engineering attack detection and defense (MSc thesis prototype, Vistula University, 2026).",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:static": "vite build && echo '\n✅ Static build complete! Run npm run serve to view the app.'",
+    "build:static": "vite build --config vite.config.static.js",
+    "build:debug": "vite build --config vite.config.debug.js",
     "serve": "node serve-static.js",
     "serve:python": "python3 -m http.server 8080 -d dist || python -m http.server 8080 -d dist",
     "serve:npx": "npx serve dist -s",
@@ -49,8 +50,14 @@
     "research",
     "phishing",
     "detection",
-    "defense"
+    "defense",
+    "msc-thesis"
   ],
-  "author": "Research Team",
-  "license": "MIT"
+  "author": "Nnamdi Isaac Alor",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nnamdi489/social-engineering-framework.git"
+  },
+  "homepage": "https://Nnamdi489.github.io/social-engineering-framework/"
 }
