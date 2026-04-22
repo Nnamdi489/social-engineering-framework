@@ -1,0 +1,56 @@
+{
+  "name": "socio-engineering-research-framework",
+  "version": "1.0.0",
+  "description": "A comprehensive Vue.js application for social engineering attack detection and defense simulation research",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:static": "vite build && echo '\n✅ Static build complete! Run npm run serve to view the app.'",
+    "serve": "node serve-static.js",
+    "serve:python": "python3 -m http.server 8080 -d dist || python -m http.server 8080 -d dist",
+    "serve:npx": "npx serve dist -s",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "chart.js": "^4.5.0",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^2.30.0",
+    "highlight.js": "^11.9.0",
+    "lodash": "^4.17.21",
+    "marked": "^9.1.6",
+    "pinia": "^2.1.7",
+    "uuid": "^9.0.1",
+    "vite-plugin-singlefile": "^2.3.0",
+    "vue": "^3.4.0",
+    "vue-chartjs": "^5.3.0",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/test-utils": "^2.4.0",
+    "eslint": "^8.54.0",
+    "jsdom": "^23.0.0",
+    "prettier": "^3.1.0",
+    "sass": "^1.69.5",
+    "vite": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "keywords": [
+    "social-engineering",
+    "cybersecurity",
+    "simulation",
+    "vue.js",
+    "research",
+    "phishing",
+    "detection",
+    "defense"
+  ],
+  "author": "Research Team",
+  "license": "MIT"
+}
