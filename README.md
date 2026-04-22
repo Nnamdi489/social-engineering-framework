@@ -95,7 +95,7 @@ The `vite-plugin-singlefile` setup bundles the entire application into one self-
 
 ```bash
 git clone https://github.com/Nnamdi489/social-engineering-framework.git
-cd Social-engineering-framework
+cd social-engineering-framework
 npm install
 npm run dev
 ```
